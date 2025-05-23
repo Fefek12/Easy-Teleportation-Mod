@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "easy-teleportation-mod",
+	"version": "${version}",
+	"name": "Easy Teleportation Mod",
+	"description": "A Minecraft Mod to help you travel.",
+	"authors": [
+		"Fefek!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Fefek12/Easy-Teleportation-Mod"
+	},
+	"license": "None",
+	"icon": "assets/easy-teleportation-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fefek.easyteleportationmod.EasyTeleportationMod"
+		],
+		"fabric-datagen": [
+			"com.fefek.easyteleportationmod.EasyTeleportationModDataGenerator"
+		],
+		"client": [
+			"com.fefek.easyteleportationmod.EasyTeleportationModClient"
+		]
+	},
+	"mixins": [
+		"easy-teleportation-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
